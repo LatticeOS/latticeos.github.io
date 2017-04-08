@@ -3399,7 +3399,10 @@
 		position: relative;
 		text-align: center;
 	}
-
+		#banner .inner {
+			z-index: 1;
+		}
+		
 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
