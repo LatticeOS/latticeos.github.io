@@ -3375,6 +3375,10 @@
 
 /* Banner */
 
+	.particles-js-canvas-el{
+		position: absolute;
+	}
+
 	#banner {
 		display: -moz-flex;
 		display: -webkit-flex;
