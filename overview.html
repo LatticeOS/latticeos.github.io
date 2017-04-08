@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Overview - Lattice OS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Lattice OS</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="overview.html">Overview</a></li>
+											<li><a href="demo.html">Demo</a></li>
+											<li><a href="video.html">Video</a></li>
+											<!--li><a href="about.html">About</a></li-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Overview</h2>
+							<p>What's so simple about LatticeOS?</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<!--h3>DEMO</h3>
+								<p>A public demo is available at demo.portainer.io.</p>
+
+								<p>Use the username <code>admin</code> and password <code>trylaticeos</code> when prompted. Please note that the demo cluster is reset every 15min.</p-->
+
+								<hr />
+
+								<h3>Detailed Overview</h3>
+								<p>LatticeOS has more then one modules, so you can using <code>docker-compose</code> to start.</p>
+
+								<p>Installing <code>docker</code> first. </p>
+
+								<pre><code># curl -sSL https://get.docker.com | bash</code></pre>
+
+								<p>And then, you can easily deploy LatticeOS.</p>
+
+								<pre><code># docker run -it \
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	--name latticeos gitai/latticeos
+								</code></pre>
+								<p>More about <a href="https://docs.docker.com/compose/"><code>docker-compose</code></a> and <a href="https://github.com/LatticeOS/compose">this <code>docker-compose.yml</code></a></p>
+
+								<hr />
+
+								<h4>Xorg</h4>
+								<p>Base service for GUI.</p>
+
+								<h4>Restful-API</h4>
+								<p>Export Restful API from host docker service.</p>
+
+
+								<h4>Desktop</h4>
+								<p>This image meant for running a light weight desktop. <br> Looks like a common desktop environment, but it`s in container.</p>
+								<img src="https://camo.githubusercontent.com/ec3665541c5810ad92afcbf492b265ecf5cbc61b/68747470733a2f2f7777772e646969676f2e636f6d2f66696c652f696d6167652f73736461726f647a6472737363647362617a63726271657064722f78666365342d6465736b746f702e6a7067">
+								<p>More about <a href="https://github.com/LatticeOS/xfce4-desktop">this project</a>.</p>
+
+								<h4>Workspace</h4>
+								<p>Lightweight management UI of Applications and Projects.</p>
+								<img src="https://camo.githubusercontent.com/d6570871a8e9f308af9d46c478dde65d47ce7d0e/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031372f30332f33312f353864643430353636623232342e706e67">
+								<p>More about <a href="https://github.com/LatticeOS/Workspace">this project</a>.</p>
+								
+								<hr />
+
+								<h3>Demo</h3>
+								<p>You can see some demo <a href="./demo">here</a>.</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon iconfont icon-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon iconfont icon-email"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Gitai.me</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
