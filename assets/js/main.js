@@ -81,7 +81,7 @@
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
 
-			/* if ($banner.length > 0
+			if ($banner.length > 0
 			&&	$header.hasClass('alt')) {
 
 				$window.on('resize', function() { $window.trigger('scroll'); });
@@ -93,7 +93,7 @@
 					leave:		function() { $header.removeClass('alt'); }
 				});
 
-			}*/
+			}
 			particlesJS.load('banner', 'assets/particles.json', function() {
 				console.log('callback - particles.js config loaded');
 			});
