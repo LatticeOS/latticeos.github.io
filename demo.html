@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Overview - Lattice OS</title>
+		<title>Demo - Lattice OS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -43,8 +43,8 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Overview</h2>
-							<p>What's so simple about LatticeOS?</p>
+							<h2>Demo</h2>
+							<p>The containerized IDE for the Workspace that is the lightweight management UI of Applications and Projects in LatticeOS.?</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
@@ -56,40 +56,39 @@
 
 								<hr />
 
-								<h3>Detailed Overview</h3>
-								<p>LatticeOS has more then one modules, so you can using <code>docker-compose</code> to start.</p>
+								<h3>OpenSSH</h3>
 
-								<p>Installing <code>docker</code> first. </p>
+								<p>Install <code>openssh</code> at first.</p>
 
-								<pre><code># curl -sSL https://get.docker.com | bash</code></pre>
+								<pre><code># apk add openssh</code></pre>
 
-								<p>And then, you can easily deploy LatticeOS.</p>
+								<p>Using <code>openssh</code> connect to the host.</p>
 
-								<pre><code># docker run -it \
-	-v /var/run/docker.sock:/var/run/docker.sock \
-	--name latticeos gitai/latticeos
-								</code></pre>
-								<p>More about <a href="https://docs.docker.com/compose/"><code>docker-compose</code></a> and <a href="https://github.com/LatticeOS/compose">this <code>docker-compose.yml</code></a></p>
+								<pre><code># ssh [ROOT_USERNAME]@[IP_OF_HOST]</code></pre>
 
-								<h4>Xorg</h4>
-								<p>Base service for GUI.</p>
+								<p>Then, you can using the command of <code>docker</code> to pull&run the project.</p>
 
-								<h4>Restful-API</h4>
-								<p>Export Restful API from host docker service.</p>
+								<pre><code># docker pull daocloud.io/dphdjy/workspace</code></pre>
+
+								<p>Now, you have this container and can start.</p>
+
+								<pre><code># docker run -d --volumes-from Desktop daocloud.io/dphdjy/workspace</code></pre>
+
+								<p>The arg <code>--volumes-from</code> can link this container to Desktop container and make the dir <code>workspace</code> publice.</p>
+								
+								<hr />
+
+								<h3>Curl & Restful</h3>
+
+								<p>This is NOT a good idea, so we will remove it.</p>
+
+								<hr />
+
+								<h3>Workspace -> Container</h3>
+
+								<p>Well, This is the bast way to do, but has some bug.</p>
 
 
-								<h4>Desktop</h4>
-								<p>This image meant for running a light weight desktop. <br> Looks like a common desktop environment, but it`s in container.</p>
-								<img src="https://camo.githubusercontent.com/ec3665541c5810ad92afcbf492b265ecf5cbc61b/68747470733a2f2f7777772e646969676f2e636f6d2f66696c652f696d6167652f73736461726f647a6472737363647362617a63726271657064722f78666365342d6465736b746f702e6a7067">
-								<p>More about <a href="https://github.com/LatticeOS/xfce4-desktop">this project</a>.</p>
-
-								<h4>Workspace</h4>
-								<p>Lightweight management UI of Applications and Projects.</p>
-								<img src="https://camo.githubusercontent.com/d6570871a8e9f308af9d46c478dde65d47ce7d0e/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031372f30332f33312f353864643430353636623232342e706e67">
-								<p>More about <a href="https://github.com/LatticeOS/Workspace">this project</a>.</p>
-
-								<h3>Demo</h3>
-								<p>You can see some demo <a href="./demo">here</a>.</p>
 							</div>
 						</section>
 					</article>
